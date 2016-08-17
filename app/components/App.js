@@ -5,9 +5,8 @@ var App = React.createClass({
   render: function() {
     return (
       <header>
-        <nav>
-          <div>Name</div>
-          <div>Search bar</div>
+        <nav className="navbar">
+          <h1 className="navbar__title">Weather App</h1>
         </nav>
       </header>
     )
