@@ -1,0 +1,16 @@
+.btn {
+  height: 2em;
+  background-color: $blue;
+  border: none;
+  color: white;
+  padding: .2em .5em;
+
+  &:hover {
+    background-color: color($blue shade(20%));
+  }
+
+  &:active, &:focus {
+    background-color: color($blue shade(30%));
+  }
+}
+

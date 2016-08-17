@@ -1,4 +1,5 @@
 var React = require('react')
+var Search = require('./Search')
 require('../styles/main.css')
 
 var App = React.createClass({
@@ -8,6 +9,7 @@ var App = React.createClass({
         <header>
           <nav className="navbar">
             <h1 className="navbar__title">Weather App</h1>
+            <Search />
           </nav>
         </header>
         {this.props.children}
