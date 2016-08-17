@@ -27,7 +27,8 @@ module.exports = {
     loaders: [
       // babel loader used for jsx transpilation
       {test: /\.js$/, include: __dirname + '/app', loader: 'babel-loader'},
-      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'}
+      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'},
+      {test: /\.svg/, loader: 'file-loader'}
     ]
   },
   // plugins go outside of module
