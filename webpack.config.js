@@ -1,4 +1,7 @@
-// In webpack.config.js
+var precss = require('precss')
+var autoprefixer = require('autoprefixer')
+var postcssImport = require('postcss-import')
+
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 // config for Html webpack plugin
 // Use app/index.html as a template and inject bundled code into the body of the file for dist
@@ -24,10 +27,21 @@ module.exports = {
     loaders: [
       // babel loader used for jsx transpilation
       {test: /\.js$/, include: __dirname + '/app', loader: 'babel-loader'},
-      {test: /\.css$/, include: __dirname + '/app', loader: 'style-loader!css-loader'}
+      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'}
     ]
   },
   // plugins go outside of module
   // Use the Html webpack plugin to generate dist html file from a template
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
+  postcss: function (webpack) {
+    return [
+      // It's important to load the postcss plugins in this order
+      postcssImport({
+        addDependencyTo: webpack,
+        // path: __dirname + '/app/styles'
+      }),
+      precss,
+      autoprefixer
+    ]
+  }
 }

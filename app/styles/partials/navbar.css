@@ -1,11 +1,5 @@
-@import "~normalize.css/normalize.css";
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 .navbar {
-  background-color: #f39c12;
+  background-color: $orange;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -15,6 +9,6 @@ body {
 
 .navbar__title {
   font-size: 1.2em;
-  color: #FFFFFF;
+  color: $white;
   letter-spacing: .05em;
 }

@@ -1,0 +1,6 @@
+/* Import all files here */
+/* This gives a workflow similar to sass */
+@import "normalize.css";
+@import "partials/base";
+@import "partials/colors";
+@import "partials/navbar";

@@ -1,5 +1,5 @@
 var React = require('react')
-require('../main.css')
+require('../styles/main.css')
 
 var App = React.createClass({
   render: function() {
