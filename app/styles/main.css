@@ -4,6 +4,6 @@
 @import "partials/base";
 @import "partials/colors";
 @import "partials/button";
-@import "partials/navbar";
-@import "partials/Home";
-@import "partials/Search";
+@import "components/Navbar";
+@import "components/Home";
+@import "components/Search";

@@ -8,12 +8,12 @@ var Home = require('../components/Home')
 var ForecastContainer = require('../containers/ForecastContainer')
 
 var routes = (
-    <Router history={hashHistory}>
-      <Route path="/" component={App}>
-        <IndexRoute component={Home} />
-        <Route path="forecast/:city" component={ForecastContainer} />
-      </Route>
-    </Router>
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="forecast/:city" component={ForecastContainer} />
+    </Route>
+  </Router>
 )
 
 module.exports = routes

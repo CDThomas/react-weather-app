@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Force all outer containers to take up the full screen */
 html, body, .app {
   height: 100%;
   width: 100%;

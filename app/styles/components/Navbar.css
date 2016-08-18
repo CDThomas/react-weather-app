@@ -1,4 +1,4 @@
-.navbar {
+.Navbar {
   background-color: $orange;
   height: 50px;
   display: flex;
@@ -7,7 +7,7 @@
   padding: 0 20px;
 }
 
-.navbar__title {
+.Navbar__title {
   font-size: 1.2em;
   color: $white;
   letter-spacing: .05em;

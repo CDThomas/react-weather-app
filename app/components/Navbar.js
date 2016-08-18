@@ -4,9 +4,9 @@ var SearchContainer = require('../containers/SearchContainer')
 
 function Navbar () {
   return (
-    <nav className="navbar">
+    <nav className="Navbar">
       <Link to="/">
-        <h1 className="navbar__title">Weather App</h1>
+        <h1 className="Navbar__title">Weather App</h1>
       </Link>
       <SearchContainer />
     </nav>
