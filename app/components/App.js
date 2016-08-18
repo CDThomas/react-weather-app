@@ -1,5 +1,5 @@
 var React = require('react')
-var Search = require('./Search')
+var Navbar = require('./Navbar')
 require('../styles/main.css')
 
 var App = React.createClass({
@@ -7,10 +7,7 @@ var App = React.createClass({
     return (
       <div className="app">
         <header>
-          <nav className="navbar">
-            <h1 className="navbar__title">Weather App</h1>
-            <Search />
-          </nav>
+          <Navbar />
         </header>
         {this.props.children}
       </div>

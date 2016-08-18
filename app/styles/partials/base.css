@@ -13,3 +13,7 @@ input[type=text] {
   padding-left: .5em;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
