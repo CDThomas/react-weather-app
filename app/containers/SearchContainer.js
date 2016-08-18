@@ -27,6 +27,10 @@ var SearchContainer = React.createClass({
   handleSubmitCity: function (e) {
     e.preventDefault()
 
+    this.setState({
+      city: ''
+    })
+
     this.context.router.push('/forecast/' + this.state.city)
   },
   render: function () {
