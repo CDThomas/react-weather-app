@@ -1,3 +1,5 @@
+require('dotenv').config()
+var webpack = require('webpack')
 var precss = require('precss')
 var autoprefixer = require('autoprefixer')
 var postcssImport = require('postcss-import')
@@ -10,7 +12,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
   inject: 'body'
-});
+})
 
 module.exports = {
   entry: [
@@ -33,7 +35,13 @@ module.exports = {
   },
   // plugins go outside of module
   // Use the Html webpack plugin to generate dist html file from a template
-  plugins: [HtmlWebpackPluginConfig],
+  plugins: [
+    HtmlWebpackPluginConfig,
+    new webpack.EnvironmentPlugin([
+      "NODE_ENV",
+      "WEATHER_API_KEY"
+    ])
+  ],
   postcss: function (webpack) {
     return [
       // It's important to load the postcss plugins in this order

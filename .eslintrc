@@ -4,7 +4,9 @@
   },
   "globals": {
     "require": false,
-    "module": false
+    "module": false,
+    "process": false,
+    "__dirname": false
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "installedESLint": true,
