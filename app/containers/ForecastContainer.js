@@ -1,6 +1,7 @@
 var React = require('react')
 var PropTypes = React.PropTypes
 var weatherApiHelpers = require('../utils/weatherApiHelpers')
+var ForecastDayList = require('../components/ForecastDayList')
 
 var ForecastContainer = React.createClass({
   propTypes: {
@@ -26,9 +27,11 @@ var ForecastContainer = React.createClass({
   },
   render: function () {
     if (this.state.isLoading) return <p>Loading...</p>
+
     return (
-      // TODO: render ForecastDayList made up of ForcastDay components
-      <div>Forecast for {this.props.routeParams.city}</div>
+      <ForecastDayList
+        city={this.props.routeParams.city}
+        dailyForecasts={this.state.dailyForecasts} />
     )
   }
 })
