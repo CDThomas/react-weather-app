@@ -1,0 +1,19 @@
+.ForecastDayList {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.ForecastDayList__heading {
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.ForecastDayList__subtext {
+  font-size: 1.5em;
+}
+
+.ForecastDayList__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

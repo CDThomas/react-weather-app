@@ -1,0 +1,16 @@
+.ForecastDayItem {
+  padding: 1.5em 1em 1em;
+  margin: .5em;
+  width: 25%;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  list-style-type: none;
+}
+
+.ForecastDayItem__icon {
+  height: 4em;
+  width: 5em;
+}
+
+.ForecastDayItem__text {
+  font-weight: 400;
+}

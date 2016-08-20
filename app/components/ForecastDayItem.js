@@ -11,15 +11,16 @@ function ForecastDayItem (props) {
   // Parse as Unix timestamp and format as "dayOfWeek, Month dayOfMonth"
   var prettyDate = moment(rawDate, 'X').format('dddd, MMM D')
   return (
-    <div>
-      <img src={fileUrl} alt={description} style={{height: 50, width: 50}} />
-      <h2>{prettyDate}</h2>
-    </div>
+    <li className="ForecastDayItem" onClick={props.onDaySelect.bind(null, props.dailyForecast)}>
+      <img src={fileUrl} alt={description} className="ForecastDayItem__icon" />
+      <h2 className="ForecastDayItem__text">{prettyDate}</h2>
+    </li>
   )
 }
 
 ForecastDayItem.propTypes = {
-  dailyForecast: PropTypes.object.isRequired
+  dailyForecast: PropTypes.object.isRequired,
+  onDaySelect: PropTypes.func.isRequired
 }
 
 module.exports = ForecastDayItem
