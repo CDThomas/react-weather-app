@@ -6,11 +6,3 @@
   list-style-type: none;
 }
 
-.ForecastDayItem__icon {
-  height: 4em;
-  width: 5em;
-}
-
-.ForecastDayItem__text {
-  font-weight: 400;
-}
