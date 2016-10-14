@@ -5,7 +5,8 @@ var API_BASE_URL = 'http://api.openweathermap.org/data/2.5/'
 var client = axios.create({
   baseURL: API_BASE_URL,
   params: {
-    APPID: process.env.WEATHER_API_KEY
+    APPID: process.env.WEATHER_API_KEY,
+    units: 'imperial'
   }
 })
 

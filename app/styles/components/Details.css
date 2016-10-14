@@ -1,0 +1,24 @@
+.Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.Details__cityName {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin: .5em;
+}
+
+.Details__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Details__list > li {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
